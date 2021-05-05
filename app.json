@@ -1,0 +1,12 @@
+{
+  "name": "Ingredient",
+  "displayName": "Ingredient",
+  "expo": {
+    "name": "Ingredient",
+    "slug": "Ingredient",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
