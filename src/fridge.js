@@ -1,17 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import NavBar from './src/navbar.js'
-import CameraPage from './src/camerapage.js';
-import FridgePage from './src/fridge.js';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-export default function App() {
+export default function FridgePage() {
   return (
     <View style={styles.container}>
+      <Text style={styles.appname}>Hi </Text>
+      <Text style={styles.appname}>Bye </Text>
+      <TouchableOpacity>
+          <Text>Button</Text>
+      </TouchableOpacity>
       <StatusBar style="auto" />
-      <FridgePage/>
-      {/* <CameraPage/> */}
-      {/* <NavBar/> */}
     </View>
   );
 }
