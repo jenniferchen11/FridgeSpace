@@ -4,15 +4,29 @@ import { StyleSheet, Text, View } from 'react-native';
 import NavBar from './src/navbar.js'
 import CameraPage from './src/camerapage.js';
 import FridgePage from './src/fridge.js';
+import { NativeRouter, Route, Link, Switch } from "react-router-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <NativeRouter>
       <StatusBar style="auto" />
-      <FridgePage/>
-      {/* <CameraPage/> */}
-      {/* <NavBar/> */}
-    </View>
+      <View style={styles.container}>
+        <Link to="/" underlayColor="#f0f4f7" >
+            <Text>Home</Text>
+        </Link>
+        <Link to="/about" underlayColor="#f0f4f7" >
+            <Text>About</Text>
+        </Link>
+      </View>
+      <Switch>
+        <Route exact path="/">
+          <CameraPage/>
+        </Route>
+        <Route path="/about">
+          <FridgePage/>
+        </Route>
+      </Switch> 
+    </NativeRouter>
   );
 }
 
