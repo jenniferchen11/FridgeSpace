@@ -7,6 +7,7 @@ export default function FridgePage() {
     <View style={styles.container}>
       <Image style={styles.Logo} source={require('./Images/Logo.png')}></Image>
       <Image style={styles.Search} source={require('./Images/Search.png')}></Image>
+      <Image style={styles.Food} source={require('./Images/Food.png')}></Image>
       <TouchableOpacity>
           <Text>Button</Text>
       </TouchableOpacity>
@@ -18,7 +19,6 @@ export default function FridgePage() {
 
 const styles = StyleSheet.create({
   container: {
-    
     backgroundColor: '#EEEEEE',
     alignItems: 'center',
     justifyContent: 'center',
