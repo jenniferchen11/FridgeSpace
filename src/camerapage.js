@@ -5,7 +5,6 @@ import { Camera } from 'expo-camera';
 export default function CameraPage() {
   const [hasPermission, setHasPermission] = useState(null);
   const [type, setType] = useState(Camera.Constants.Type.back);
-
   //for captured image
   const [previewVisible, setPreviewVisible] = useState(false)
   const [capturedImage, setCapturedImage] = useState('emptyuri')
@@ -22,9 +21,7 @@ export default function CameraPage() {
       let photo = await this.camera.takePictureAsync();
       setPreviewVisible(true)
       setCapturedImage(String(photo.uri))
-      console.log(capturedImage)
     }
-
   };
 
   const CameraPreview = ({photo}) => {
@@ -36,9 +33,7 @@ export default function CameraPage() {
       <View>
         <Image
           source={{uri: capturedImage}}
-          style={{
-            flex: 1
-          }}
+          style={styles.capturedPic}
         />
       </View>
     )
@@ -68,20 +63,15 @@ export default function CameraPage() {
                   : Camera.Constants.Type.back
               );
             }}>
-            <Text style={styles.text}> Flip </Text>
+            <Text style={styles.flip}> Flip </Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity
-            onPress={snap}
-            style={{
-            width: 70,
-            height: 70,
-            bottom: 0,
-            borderRadius: 50,
-            backgroundColor: 'black'
-            }}
-            />
       </Camera>
+      <TouchableOpacity           
+          style = {styles.captureImageButton}
+          onPress={snap}> 
+         <Text>Take Photo</Text>
+        </TouchableOpacity>
     </View>
   )}
 
@@ -90,8 +80,12 @@ const styles = StyleSheet.create({
       backgroundColor: '#fff',
     
     },
-    appname:{
-      fontSize: 80,
+    captureImageButton:{
+      width: 70,
+      height: 70,
+      bottom: 0,
+      borderRadius: 50,
+      backgroundColor: 'black'
     },
     camera:{
         width: 300,
@@ -99,6 +93,13 @@ const styles = StyleSheet.create({
     },
     button:{
         backgroundColor: '#fff',
+    },
+    flip:{
+      backgroundColor: 'red'
+    },
+    capturedPic:{
+      width:300,
+      height: 300
     }
 
   });
