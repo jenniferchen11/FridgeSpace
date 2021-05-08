@@ -11,6 +11,7 @@ export default function FridgePage() {
       <Image style={styles.Logo} source={require('./Images/Logo.png')}></Image>
       <Image style={styles.Search} source={require('./Images/Search.png')}></Image>
       {/* <Image style={styles.Food} source={require('./Images/Food.png')}></Image> */}
+      <Image style={styles.Search} source={require('./Images/Food.png')}></Image>
       <Text style={styles.MyFridgeName}>My Fridge </Text>
       <StatusBar style="auto" />
     </View>
@@ -52,11 +53,14 @@ const styles = StyleSheet.create({
     // fontFamily: 'Lato',
     fontWeight: 'bold',
   },
-  Food:{
-    height: 200,
-  },
-  
+
   appname:{
-    fontSize: 90,}
-}); 
+    fontSize: 90,},
+
+  Food:{
+    position: 'absolute',
+    alignItems: 'center',
+    height: 300,
+  },
+});
 
