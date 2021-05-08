@@ -6,8 +6,7 @@ export default function FridgePage() {
   return (
     <View style={styles.container}>
       <Image style={styles.Logo} source={require('./Images/Logo.png')}></Image>
-      <Text style={styles.appname}>Hi </Text>
-      <Text style={styles.appname}>Bye </Text>
+      <Image style={styles.Search} source={require('./Images/Search.png')}></Image>
       <TouchableOpacity>
           <Text>Button</Text>
       </TouchableOpacity>
@@ -19,10 +18,12 @@ export default function FridgePage() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    
+    backgroundColor: '#EEEEEE',
     alignItems: 'center',
     justifyContent: 'center',
+    width:10000,
+
   },
   Logo: {
     position: 'absolute',
@@ -30,6 +31,13 @@ const styles = StyleSheet.create({
     height: 130,
     alignItems: 'center',
     top: 77,
+  },
+  Search: {
+    position: 'absolute',
+    width:314,
+    height: 60,
+    alignItems: 'center',
+    top: 240,
   },
   MyFridgeName: {
     position: 'absolute',
@@ -39,10 +47,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontStyle: 'normal',
     fontFamily: 'Lato',
-
-
-
+    fontWeight: 'bold',
   },
+  
   appname:{
     fontSize: 90,}
 }); 
