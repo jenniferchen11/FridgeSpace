@@ -2,10 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function NavBar() {
+export default function Saved() {
   return (
     <View style={styles.container}>
-      <Text style={styles.appname}>HI </Text>
+      <Text style={styles.appname}>Saved Foods Page </Text>
       <StatusBar style="auto" />
     </View>
   );
