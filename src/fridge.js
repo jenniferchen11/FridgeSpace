@@ -6,8 +6,6 @@ export default function FridgePage() {
   return (
     <View style={styles.container}>
       <Image style={styles.Logo} source={require('./Images/Logo.png')}></Image>
-      <Text style={styles.appname}>Hi </Text>
-      <Text style={styles.appname}>Bye </Text>
       <TouchableOpacity>
           <Text>Button</Text>
       </TouchableOpacity>
@@ -19,7 +17,6 @@ export default function FridgePage() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
@@ -38,9 +35,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     fontStyle: 'normal',
-    fontFamily: 'Lato',
-
-
+    //fontFamily: 'Lato',
 
   },
   appname:{
