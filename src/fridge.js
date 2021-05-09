@@ -18,6 +18,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     flex: 0.9
   },
+
+  appname:{
+    fontSize: 90,},
+
   Food:{
     width: 400,
     height: 740,
