@@ -38,7 +38,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
+    backgroundColor: 'green',
     position: 'relative',
     top: 830,
     alignItems: 'center',
@@ -46,30 +46,30 @@ const styles = StyleSheet.create({
   },
   home:{
     position: 'absolute',
-    left: -170,
-    width: 50,
-    height: 50,
+    left: -150,
+    width: 30,
+    height: 30,
     flex: 1
   },
   fridge:{
     position: 'absolute',
-    left: -80,
-    width: 50,
-    height: 50,
+    left: -60,
+    width: 30,
+    height: 30,
     flex: 1
   },
   saved:{
     position: 'absolute',
-    left: 10,
-    width: 50,
-    height: 50,
+    left: 30,
+    width: 27,
+    height: 27,
     flex: 1
   },
   user:{
     position: 'absolute',
-    left: 100,
-    width: 50,
-    height: 50,
+    left: 120,
+    width: 30,
+    height: 30,
     flex: 1
   }
 });

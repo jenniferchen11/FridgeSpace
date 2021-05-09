@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 export default function User() {
   return (
     <View style={styles.container}>
-      <Text style={styles.appname}>User Settings Page </Text>
+      <Image style={styles.img} source={require('./Images/users.png')}></Image>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  appname:{
-    fontSize: 80,}
+  img:{
+    width: 420,
+    height: 810,}
 });
