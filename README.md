@@ -1,14 +1,12 @@
 # IngredientApp
 
-Created for TOHacks 2021
-
-#Our Brief
+Created for TOHacks 2021!
 
 ### Inspiration 🧠
 
 With the average single-family household **throwing away over 200kg of food every year**, FridgeSpace bridges the main causes of food waste by **addressing consumers' lack of planning**, attitudes towards preferences, and behaviour. 
 
-###What it does 💻
+### What it does 💻
 
 The core features include a **virtual fridge** that tracks the expiration of food to prevent waste, an ingredients scanner that __identifies foods__ and their alignments with dietary restrictions, and many customizable features to suit your food needs! 
 
@@ -22,7 +20,7 @@ Some features include:
 - Sustainability measurements 🌳
 
 ---
-#The Logistics
+# The Logistics
 
 ### How we built it 🧱
 
@@ -33,7 +31,7 @@ Here is an image of our mockup:
 ![Mock Up](https://i.imgur.com/OabZ3Bl.jpg)
 
 ---
-#Our Takeaways
+# Our Takeaways
 
 ### Challenges we ran into 😠
 
@@ -48,7 +46,7 @@ With a **diverse team** with various skills and age ranges, we learnt through un
 We learned how to work together in a group with a limited time frame to produce a really cool project. We also learned some new languages and were are able to develop our __CS skills__!
 
 ## What's next for FridgeSpace 🤷‍♀️
-We'd love to take any feedback and hear from you! We hope to expand FridgeSpace with greater complexity, and potentially integrate **AI/ML** to aid in the user experience for future users.
+We'd love to take any feedback and hear from you! We hope to expand FridgeSpace with greater complexity, and potentially integrate **Firebase** as a backend database to store user preferences.
 
 ---
 
