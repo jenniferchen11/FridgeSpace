@@ -60,7 +60,7 @@ export default function CameraPage() {
       });
 
       let response = await fetch(
-        'https://vision.googleapis.com/v1/images:annotate?key=AIzaSyCx9GT1CYw1rP3BMESxUlxWsihF7ZCXEyc',
+        'https://vision.googleapis.com/v1/images:annotate?key=put_yout_key_here',
         {
           headers: {
             Accept: 'application/json',
