@@ -1,4 +1,4 @@
-# IngredientApp
+# FridgeSpace
 
 Created for TOHacks 2021!
 
